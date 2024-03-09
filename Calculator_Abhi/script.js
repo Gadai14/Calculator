@@ -1,69 +1,50 @@
+
 var screen = document.querySelector('#screen');
-   
-   var btn = document.querySelectorAll('.btn');
+var btn = document.querySelectorAll('.btn');
 
-    /*============ For getting the value of btn, Here we use for loop ============*/
-   
-      
-    for ( item of btn) {
-        item.addEventListener('click', (e) => {
-            btntext = e.target.innerText;
+for (item of btn) {
+    item.addEventListener('click', (e) => {
+        var btntext = e.target.innerText;
 
-            if (btntext == '×') {
-                btntext = '*';
-            }
-
-            if (btntext == '÷') {
-                btntext = '/';
-            }
-            if (btntext == '%') {
-    // Extract the last entered value before the percentage symbol
-    var lastValue = screen.value.split(/[\+\-\*\/]/).pop();
-
-    // Calculate the percentage and update the screen value
-    var percentageResult = parseFloat(lastValue) / 100;
-    screen.value = percentageResult;
-
-    // Automatically multiply the result by the next input
-    screen.value += '*';
-    
-    return; // Exit the function to prevent appending '*' to the input
+        if (btntext == '×') {
+            btntext = '*';
+        } else if (btntext == '÷') {
+            btntext = '/';
+        } 
+        
+        
+        screen.value += btntext;
+    });
 }
 
-
-
-
-
-
-           
-            screen.value += btntext;
-        });
-    } 
-
-
-
-   /* function sin() {
-        screen.value = Math.sin(screen.value);
-    }*/
-    function sin() {
+function sin(){
     var inputValue = parseFloat(screen.value);
     if (!isNaN(inputValue)) {
+        screen.value = `sin ${inputValue}`;
+    } else {
+        screen.value = 'sin';
+    }
+}
+function calculatesin() {
+    // Extract the value after 'sin ' (including the space)
+    var inputValue = parseFloat(screen.value.substring(4));
+    // Check if the extracted value is a valid number
+    if (!isNaN(inputValue)) {
+        // Calculate the sine of the extracted value
         var sinResult = Math.sin(inputValue);
-        // Round the result to the nearest value
+        // Round the result to 12 decimal places
         sinResult = Math.round(sinResult * 100000000000) / 100000000000;
+        // Update the screen value to display the sine result
         screen.value = sinResult;
     } else {
-        // Display an error message or handle invalid input
-        screen.value = "Error";
+        // Display an error message if the extracted value is not a valid number
+        screen.value= "First press any number";
+        scr
     }
 }
 
 
-
-   /* function cos() {
-        screen.value = Math.cos(screen.value);
-    }*/
-    function cos() {
+function cos() {
     var inputValue = parseFloat(screen.value);
     if (!isNaN(inputValue)) {
         var cosResult = Math.cos(inputValue);
@@ -76,11 +57,7 @@ var screen = document.querySelector('#screen');
     }
 }
 
-/*
-    function tan() {
-        screen.value = Math.tan(screen.value);
-    }*/
-    function tan(){
+function tan() {
     var inputValue = parseFloat(screen.value);
     if (!isNaN(inputValue)) {
         var tanResult = Math.tan(inputValue);
@@ -93,72 +70,128 @@ var screen = document.querySelector('#screen');
     }
 }
 
-/*function log()
-    {
-        screen.value=Math.log(screen.value);
-    }*/
-    function log(){
-        var inputValue = parseFloat(screen.value);
-        if(!isNaN(inputValue))
-        {
-            var Log= Math.log(inputValue);
-            Log= Math.round(Log * 1000000) / 1000000;
-            screen.value = Log;
-        }
+function log() {
+    var inputValue = parseFloat(screen.value);
+    if (!isNaN(inputValue)) {
+        var Log = Math.log10(inputValue);
+        Log = Math.round(Log * 1000000000) / 1000000000;
+        screen.value = Log;
     }
-    function pow() {
-        screen.value = Math.pow(screen.value, 2);
+}
+
+function pow() {
+    screen.value = Math.pow(screen.value, 2);
+}
+
+function sqrt()  {
+    var inputValue = parseFloat(screen.value);
+    if (!isNaN(inputValue)) {
+        screen.value = `√(${inputValue})`;
+    } else {
+        screen.value = '√( )';
     }
-    
-    /*function sqrt() {
-        screen.value = Math.sqrt(screen.value, 2);
-    }*/
-    function sqrt(){
-        var inputValue = parseFloat(screen.value);
-        if(!isNaN(inputValue))
-        {
-            var sqrt= Math.sqrt(inputValue, 2);
-            sqrt= Math.round(sqrt * 10000000) / 10000000;
-            screen.value = sqrt;
-        }
+}
+
+function calculateSqrt() {
+    var inputValue = parseFloat(screen.value.match(/\d+/)[0]); // Extracting the number from the input
+    if (!isNaN(inputValue)) {
+        var sqrtResult = Math.sqrt(inputValue);
+        sqrtResult = Math.round(sqrtResult * 10000000) / 10000000;
+        screen.value = sqrtResult;
     }
-
-    
-
-   
-
-   
-
-    function pi() {
+    else {
+        screen.value = "Error";
+    }
+}
+function pi(){
+    var lastValue = parseFloat(screen.value);
+    if (!isNaN(lastValue)) {
+        screen.value = `${lastValue}π`;
+    } else {
+        screen.value = 'π';
+    }
+}
+function calculatepi() {
+    if (screen.value.includes('π')) {
         var lastValue = parseFloat(screen.value);
-        if(!isNaN(lastValue))
-        {
-        var piResult  =lastValue * Math.PI;
-        piResult= Math.round(piResult* 1000000000) / 1000000000;
-    screen.value = piResult;
-  
-    
-    return;
+        if (!isNaN(lastValue)) {
+            var piResult = lastValue * Math.PI;
+            piResult = Math.round(piResult * 1000000000) / 1000000000;
+            screen.value = piResult;
         }
     }
+}
 
-    function e() {
-        screen.value = 2.71828182846;
+
+function e() {
+    screen.value = 2.71828182846;
+}
+
+
+function backspc() {
+    screen.value = screen.value.substr(0, screen.value.length - 1);
+}
+function fact() {
+    var lastValue = parseFloat(screen.value);
+    if (!isNaN(lastValue)) {
+        screen.value = `${lastValue} !`; // Display the factorial sign after the number
+    } else {
+        screen.value = '!'; // Display just the factorial sign if no number is entered
     }
-
-    function fact() {
-        var i, num, f;
-        f = 1
-        num = screen.value;
-        for (i = 1; i <= num; i++) {
-            f = f * i;
+}
+function calculateFact() {
+    var num = parseInt(screen.value); // Parse the input value as an integer
+    if (!isNaN(num) && num >= 0) { // Check if the input is a valid non-negative integer
+        var f = 1;
+        for (var i = 2; i <= num; i++) {
+            f *= i; // Calculate the factorial
         }
-
-        i = i - 1;
-
-        screen.value = f;
+        screen.value = f; // Display the result
+    } else {
+        screen.value = "Error"; // Display an error message for invalid input
     }
-
-    function backspc() {
-        screen.value = screen.value.substr(0, screen.value.length - 1);
+}
+function equals() {
+    if (screen.value == 'π') {
+        let pi_result = Math.PI;
+        pi_result = Math.round(pi_result * 100000000)/100000000;
+        screen.value = pi_result;
     }
+    else if (screen.value.endsWith('!')) {
+        calculateFact(); // Call calculateFact() function to calculate factorial
+    }
+    // Check if the current value in the screen starts with '√('
+    else if (screen.value.startsWith('√(')) {
+        // Extract the number inside the square root symbol
+        calculateSqrt();
+    }
+    else if(screen.value.includes('π')) {
+        // Extract the number before 'π'
+        calculatepi();
+    }
+    else if(screen.value.startsWith('sin')){
+        calculatesin();
+
+    }
+    else if (screen.value.includes('%')) {
+            // Split the expression by operators (+, -, *, /)
+            var parts = screen.value.split(/[\+\-\*\/]/);
+            // Get the last entered value
+            var lastValue = parseFloat(parts.pop());
+            // Get the percentage value
+            var percentage = parseFloat(parts.pop());
+            // Calculate the result
+            var result = lastValue * (percentage / 100);
+            screen.value = result;
+        } 
+
+     else {
+        // Evaluate the expression in the screen using eval function
+        try {
+            screen.value = eval(screen.value);
+        } catch (error) {
+            // Display an error message if evaluation fails
+            screen.value = 'Error';
+        }
+    }
+}
