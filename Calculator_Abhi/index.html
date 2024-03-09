@@ -22,7 +22,7 @@
            
 
             <div class="abhi">
-                <div class="grid-container">
+                <!-- <div class="grid-container">
                     <div class="left-column">
                     <button onclick="fact()">x!</button>
                     <button onclick="sqrt()" style="margin-left: 8px;">√</button>
@@ -34,7 +34,16 @@
                     <button class="btn">)</button>
                     
                 </div>
-                </div>
+                </div> -->
+                <div>
+                    <button onclick="fact()">x !
+                    </button>
+                <button onclick="sqrt()">√</button>
+                <button style="color: transparent;box-shadow: none;">sin</button>
+                
+                <button class="btn">(</button>
+                <button class="btn">)</button>
+            </div>
                 <div>
                     <button onclick="pow()">x <span style="position: relative; bottom: .4em; right: .1em;">2</span>
                     </button>
@@ -51,8 +60,8 @@
                 <button class="btn">7</button>
                 <button class="btn">8</button>
                 <button class="btn">9</button>
-                <button id="ce" onclick="backspc()"class="del">DEL</button>
-                <button id="ac" onclick="screen.value=''"class="ac">AC</button>
+                <button id="ce" onclick="backspc()"class="del" style="box-shadow: none;">DEL</button>
+                <button id="ac" onclick="screen.value=''"class="ac"style="box-shadow: none;">AC</button>
                
             </div>
 
@@ -80,7 +89,7 @@
                 <button onclick="pi()">π</button>
                 
                 <button class="btn"id="gadai">%</button>
-                <button id="eval" onclick="screen.value=eval(screen.value)">=</button>
+                <button id="eval" onclick="equals()">=</button>
                 
             </div>
         </div>
