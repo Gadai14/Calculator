@@ -12,35 +12,37 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #0a0a0a , #31353a);
+    background: linear-gradient(45deg, #0a0a0a , #222427);
    }
    .Calculator{
     border: 2px solid #717377;
     box-shadow: 0px 3px 15px rgba(113,115,119,0.6);
-    border-radius: 40px;
+    border-radius: 45px;
     background: transparent;
     margin-bottom: 6px;
+    padding-bottom: 10px;
+    
+
    }
    .display{
-    padding: 13px;
-    padding-top: 10px;
+    padding: 20px;
+    padding-top: 30px;
    }
     .abhi{
         padding-left: 25px;
         padding-bottom: 20px;
-        
-    
+
     }
     
    
    input{
-    width: 400px;
+    width: 380px;
     border:none;
     padding: 24px;
     margin:10px;
     margin-top: 18px;
-    box-shadow: 0px 3px 15px rgba(84,84,84,0.2);
-    font-size: 39px;
+    box-shadow: 0px 3px 15px rgba(84,84,84,0.4);
+    font-size: 40px;
     cursor: pointer;
     text-align: right;
     background: transparent;
@@ -61,33 +63,37 @@
     border-radius: 50%;
     background: transparent;
     color: white;
-    font-size: 20px;
-    box-shadow:-8px -8px 15px rgba(116, 113, 113, 0.15) ;
+    font-size: 18px;
+    box-shadow:-6px -5px 9px #7471711f ;
     cursor: pointer;
    }
    button:hover {
         box-shadow: inset -3px -3px 3px rgba(255,255,255,0.2) ,
-            inset -3px -3px 4px  rgba(255,255,255,0.2);
+            inset -3px -3px 2px  rgba(255,255,255,0.2);
         
     }
+    button:focus, button:active {
+        outline: none;
+        -webkit-tap-highlight-color: transparent; /* For older versions of iOS */
+    }
    .del ,.ac{
-    background-color: #fb7c147a;
+    background-color: #fb7c14ba;
     
    
    }
    
-.grid-container {
+ /* .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
-    gap: 63px; /* Adjust the gap between the columns as needed */
-}
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 63px; 
+}  */
 
-.left-column,
+/* .left-column,
 .right-column {
     display: flex;
     flex-direction: row;
    
-}
+} */
 #gadai{
     color: rgb(18, 241, 241);
 }
