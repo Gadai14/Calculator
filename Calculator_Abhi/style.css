@@ -97,12 +97,19 @@
 #gadai{
     color: rgb(18, 241, 241);
 }
+@media screen and (max-width:668px){
+    button{
+        font-size: 16px;
+    }
+    
+}
 @media screen and (min-width : 385px) and (max-width:463px)
 { 
     input {
         width: 95%;
-        font-size: 20px;
-        padding-right: 10px;
+        font-size: 26px;
+        padding: 25px;
+     
     }
     button {
         width: 60px;
@@ -116,22 +123,16 @@
         grid-template-columns: repeat(0, 1fr);
         gap: 70px;
     }
-    .abhi {
-        padding: 10px;
-        
-      
-    }
-    .right-column{
-        gap: 0px;
-        margin-left: 2px;
-    }
+    
+    
     button {
         margin: 4px;
     }
     .Calculator {
         border-radius: 40px;
-      padding-bottom: 17px;
-      padding-top: 17px;
+       /* padding-left: 14px; */
+      padding-bottom: 20px;
+      padding-top: 20px;
       
     
     }
@@ -139,7 +140,8 @@
         font-size: 18px;
     }
 }
-@media (max-width: 384px) {
+@media (max-width: 407px) {
+    
     .Calculator {
       
      
@@ -150,7 +152,7 @@
     
     input {
         width: 96%;
-        font-size: 18px;
+        font-size: 20px;
    margin-left: 0px;
    padding-left: 0px;
        
