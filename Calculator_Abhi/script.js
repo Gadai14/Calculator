@@ -20,14 +20,16 @@ for (item of btn) {
 function sin(){
     var inputValue = parseFloat(screen.value);
     if (!isNaN(inputValue)) {
-        screen.value = `sin ${inputValue}`;
+        screen.value = `sin (${inputValue})`;
     } else {
         screen.value = 'sin';
     }
 }
+
+
 function calculatesin() {
     // Extract the value after 'sin ' (including the space)
-    var inputValue = parseFloat(screen.value.substring(4));
+    var inputValue = parseFloat(screen.value.substring(5));
     // Check if the extracted value is a valid number
     if (!isNaN(inputValue)) {
         // Calculate the sine of the extracted value
@@ -38,14 +40,21 @@ function calculatesin() {
         screen.value = sinResult;
     } else {
         // Display an error message if the extracted value is not a valid number
-        screen.value= "First press any number";
+        screen.value= "Error";
         scr
     }
 }
-
-
-function cos() {
+function cos(){
     var inputValue = parseFloat(screen.value);
+    if (!isNaN(inputValue)) {
+        screen.value = `cos (${inputValue})`;
+    } else {
+        screen.value = 'cos';
+    }
+}
+
+function calculatecos() {
+    var inputValue = parseFloat(screen.value.substring(5));
     if (!isNaN(inputValue)) {
         var cosResult = Math.cos(inputValue);
         // Round the result to the nearest value
@@ -56,9 +65,16 @@ function cos() {
         screen.value = "Error";
     }
 }
-
-function tan() {
+function tan(){
     var inputValue = parseFloat(screen.value);
+    if (!isNaN(inputValue)) {
+        screen.value = `tan (${inputValue})`;
+    } else {
+        screen.value = 'tan';
+    }
+}
+function calculatetan() {
+    var inputValue = parseFloat(screen.value.substring(5));
     if (!isNaN(inputValue)) {
         var tanResult = Math.tan(inputValue);
         // Round the result to the nearest value
@@ -70,18 +86,27 @@ function tan() {
     }
 }
 
-function log() {
+function log(){
     var inputValue = parseFloat(screen.value);
+    if (!isNaN(inputValue)) {
+        screen.value = `log ${inputValue}`;
+    } else {
+        screen.value = 'log';
+    }
+}
+function calculatelog() {
+    var inputValue = parseFloat(screen.value.substring(4));
     if (!isNaN(inputValue)) {
         var Log = Math.log10(inputValue);
         Log = Math.round(Log * 1000000000) / 1000000000;
         screen.value = Log;
     }
+    else{
+        screen.value="Error";
+    }
 }
 
-function pow() {
-    screen.value = Math.pow(screen.value, 2);
-}
+
 
 function sqrt()  {
     var inputValue = parseFloat(screen.value);
@@ -93,12 +118,18 @@ function sqrt()  {
 }
 
 function calculateSqrt() {
+    var numberMatch = screen.value.match(/\d+/);
+    if (numberMatch) {
     var inputValue = parseFloat(screen.value.match(/\d+/)[0]); // Extracting the number from the input
     if (!isNaN(inputValue)) {
         var sqrtResult = Math.sqrt(inputValue);
         sqrtResult = Math.round(sqrtResult * 10000000) / 10000000;
         screen.value = sqrtResult;
     }
+    else{
+        screen.value= "Error";
+    }
+}
     else {
         screen.value = "Error";
     }
@@ -131,6 +162,25 @@ function e() {
 function backspc() {
     screen.value = screen.value.substr(0, screen.value.length - 1);
 }
+
+function pow() {
+    var inputValue = parseFloat(screen.value);
+    if (!isNaN(inputValue)) {
+        screen.value = `${inputValue}^2`;
+    } else {
+        screen.value = '';
+    }
+}
+
+function calculatepow() {
+    var inputValue = parseFloat(screen.value);
+    if (!isNaN(inputValue)) {
+        screen.value = Math.pow(inputValue, 2);
+    } else {
+        screen.value = 'Error';
+    }
+}
+
 function fact() {
     var lastValue = parseFloat(screen.value);
     if (!isNaN(lastValue)) {
@@ -160,6 +210,9 @@ function equals() {
     else if (screen.value.endsWith('!')) {
         calculateFact(); // Call calculateFact() function to calculate factorial
     }
+    else if (screen.value.endsWith('^2')) {
+        calculatepow();
+    }
     // Check if the current value in the screen starts with '√('
     else if (screen.value.startsWith('√(')) {
         // Extract the number inside the square root symbol
@@ -171,6 +224,18 @@ function equals() {
     }
     else if(screen.value.startsWith('sin')){
         calculatesin();
+
+    }
+    else if(screen.value.startsWith('cos')){
+        calculatecos();
+
+    }
+    else if(screen.value.startsWith('tan')){
+        calculatetan();
+
+    }
+    else if(screen.value.startsWith('log')){
+        calculatelog();
 
     }
     else if (screen.value.includes('%')) {
