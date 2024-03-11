@@ -107,7 +107,7 @@
 { 
     input {
         width: 95%;
-        font-size: 26px;
+        font-size: 24px;
        /* height: 8vh; */
        
      
@@ -117,9 +117,7 @@
         height: 60px;
         font-size: 14px;
     }
-    .display {
-        padding: 12px;
-    }
+
     .grid-container {
         grid-template-columns: repeat(0, 1fr);
         gap: 70px;
