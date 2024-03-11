@@ -5,11 +5,14 @@
 <br>
 <p> ** Discover the effortless precision of my calculator app, where smooth and seamless calculations await. Input your numbers first, then effortlessly execute trigonometric functions like sine, cosine, tangent, logarithms, and beyond—all with a single click.</p>
 <br>
-<p style="text-align:center">
-  <img src="https://github.com/Gadai14/Project_1/assets/121002242/bf2f1505-a10e-4f71-9b1a-2e9b07b42d17"height=350px width=350px >
-  <img src="https://github.com/Gadai14/Project_1/assets/121002242/dc9f3bdc-eed1-4932-b152-587e563c397b"height=350px width=350px>
-  <img src="https://github.com/Gadai14/Project_1/assets/121002242/243dcbbf-0019-44a3-8d4c-428c492d3470"height=350px width=350px >
-  <img src="https://github.com/Gadai14/Project_1/assets/121002242/177bf54a-3673-4b07-9846-8ee826ad4efe" height=350px width=350px>
-</p>
+Link  :  https://gadai14.github.io/Project_1/Calculator_Abhi 
 <br>
-Link  :  https://gadai14.github.io/Project_1/Calculator_Abhi
+<p style="text-align:center">
+  <img src="https://github.com/Gadai14/Project_1/assets/121002242/bf2f1505-a10e-4f71-9b1a-2e9b07b42d17"height=390px width=330px >
+  <img src="https://github.com/Gadai14/Project_1/assets/121002242/dc9f3bdc-eed1-4932-b152-587e563c397b"height=390px width=330px>
+  <hr>
+  <img src="https://github.com/Gadai14/Project_1/assets/121002242/243dcbbf-0019-44a3-8d4c-428c492d3470"height=390px width=330px >
+  <img src="https://github.com/Gadai14/Project_1/assets/121002242/177bf54a-3673-4b07-9846-8ee826ad4efe" height=390px width=330px>
+</p>
+
+
