@@ -5,11 +5,11 @@
 <br>
 <p> ** Discover the effortless precision of my calculator app, where smooth and seamless calculations await. Input your numbers first, then effortlessly execute trigonometric functions like sine, cosine, tangent, logarithms, and beyond—all with a single click.</p>
 <br>
-<div class="gallery" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+<p  style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
   <img src="https://github.com/Gadai14/Project_1/assets/121002242/bf2f1505-a10e-4f71-9b1a-2e9b07b42d17" alt="Image 1" style="max-width: calc(50% - 5px); max-height: 300px; object-fit: cover;">
   <img src="https://github.com/Gadai14/Project_1/assets/121002242/dc9f3bdc-eed1-4932-b152-587e563c397b" alt="Image 2" style="max-width: calc(50% - 5px); max-height: 300px; object-fit: cover;">
   <img src="https://github.com/Gadai14/Project_1/assets/121002242/243dcbbf-0019-44a3-8d4c-428c492d3470" alt="Image 3" style="max-width: calc(50% - 5px); max-height: 300px; object-fit: cover;">
   <img src="https://github.com/Gadai14/Project_1/assets/121002242/177bf54a-3673-4b07-9846-8ee826ad4efe" alt="Image 4" style="max-width: calc(50% - 5px); max-height: 300px; object-fit: cover;">
-</div>
+</p>
 <br>
 Link  :  https://gadai14.github.io/Project_1/Calculator_Abhi
