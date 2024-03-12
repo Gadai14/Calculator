@@ -9,7 +9,7 @@ Link  :  https://gadai14.github.io/Project_1/Calculator_Abhi
 <br>
 <br>
 <br>
-<p align:center>
+<p style="text-align: center;">
   <img src="https://github.com/Gadai14/Project_1/assets/121002242/bf2f1505-a10e-4f71-9b1a-2e9b07b42d17"height=440px width=340px >
   <img src="https://github.com/Gadai14/Project_1/assets/121002242/dc9f3bdc-eed1-4932-b152-587e563c397b"height=440px width=340px>
   <hr>
