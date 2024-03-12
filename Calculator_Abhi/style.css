@@ -103,21 +103,27 @@
     }
     
 }
-@media screen and (min-width : 408px) and (max-width:473px)
+@media screen and (min-width : 385px) and (max-width:463px)
 { 
     input {
         width: 95%;
         font-size: 24px;
        /* height: 8vh; */
+       padding-right: 10px;
        
      
+    }
+    .abhi{
+        padding: 10px;
     }
     button {
         width: 60px;
         height: 60px;
         font-size: 14px;
     }
-
+    .display {
+        padding: 8px;
+    }
     .grid-container {
         grid-template-columns: repeat(0, 1fr);
         gap: 70px;
@@ -130,7 +136,8 @@
     .Calculator {
         border-radius: 40px;
        /* padding-left: 14px; */
-      
+      padding-bottom: 20px;
+      padding-top: 40px;
       
     
     }
