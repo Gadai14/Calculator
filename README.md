@@ -3,9 +3,9 @@
 <br>
 <p>JavaScript functions handle the logic behind each mathematical operation, ensuring accurate results are displayed to the user. Additionally, event listeners may be employed to detect user inputs and trigger appropriate actions, such as updating the display or performing calculations. </p>
 <br>
-<p> ** Discover the effortless precision of my calculator app, where smooth and seamless calculations await. Input your numbers first, then effortlessly execute trigonometric functions like sine, cosine, tangent, logarithms, and beyond—all with a single click.</p>
+<p> *** Discover the effortless precision of my calculator app, where smooth and seamless calculations await. Input your numbers first, then effortlessly execute trigonometric functions like sine, cosine, tangent, logarithms, and beyond—all with a single click.</p>
 <br>
-Link  :  https://gadai14.github.io/Project_1/Calculator_Abhi 
+<p align="center">  Link  :  https://gadai14.github.io/Project_1/Calculator_Abhi </p>
 <br>
 <br>
 <br>
