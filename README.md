@@ -14,8 +14,8 @@
   <img src="https://github.com/Gadai14/Project_1/assets/121002242/dc9f3bdc-eed1-4932-b152-587e563c397b"height=440px width=340px></p>
   <hr>
   <p align="center">
-  <img src="https://github.com/Gadai14/Project_1/assets/121002242/243dcbbf-0019-44a3-8d4c-428c492d3470"height=460px width=340px >
-  <img src="https://github.com/Gadai14/Project_1/assets/121002242/177bf54a-3673-4b07-9846-8ee826ad4efe" height=460px width=340px>
+  <img src="https://github.com/Gadai14/Project_1/assets/121002242/243dcbbf-0019-44a3-8d4c-428c492d3470"height=470px width=340px >
+  <img src="https://github.com/Gadai14/Project_1/assets/121002242/177bf54a-3673-4b07-9846-8ee826ad4efe" height=470px width=340px>
 </p>
 
 
