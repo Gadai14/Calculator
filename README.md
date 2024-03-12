@@ -1,4 +1,4 @@
-<h1 align="center">Scientific Calculator Using JavaScript</h3>
+<h1 align="center" font-size="109px">Scientific Calculator Using JavaScript</h3>
 <p>Harnessing the elegance of simple HTML and refined CSS design, my calculator app boasts a sleek interface accentuated by tasteful box shadows, offering users an effortlessly stylish and intuitive platform for seamless calculations.</p>
 <br>
 <p>JavaScript functions handle the logic behind each mathematical operation, ensuring accurate results are displayed to the user. Additionally, event listeners may be employed to detect user inputs and trigger appropriate actions, such as updating the display or performing calculations. </p>
