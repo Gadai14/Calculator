@@ -5,7 +5,7 @@
 <br>
 <p> *** Discover the effortless precision of my calculator app, where smooth and seamless calculations await. Input your numbers first, then effortlessly execute trigonometric functions like sine, cosine, tangent, logarithms, and beyond—all with a single click.</p>
 <br>
-  Link  :  https://gadai14.github.io/Project_1/Calculator_Abhi 
+  Link  :  https://gadai14.github.io/Calculator/Calculator_Abhi 
 <br>
 <br>
 <br>
